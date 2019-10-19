@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Assistant.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="defaultRecognitionLanguage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ru-ru</Value>
+    </Setting>
+    <Setting Name="defaultSynthesisLanguage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ru-ru</Value>
+    </Setting>
+    <Setting Name="random" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="defaultKeyPhrase" Type="System.String" Scope="User">
+      <Value Profile="(Default)">next</Value>
+    </Setting>
+    <Setting Name="defaultKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Your key</Value>
+    </Setting>
+    <Setting Name="defaultServiceRegion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Your region</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

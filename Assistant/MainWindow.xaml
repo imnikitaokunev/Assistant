@@ -1,0 +1,34 @@
+﻿<Window x:Class="Assistant.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assistant"
+        mc:Ignorable="d"
+        Title="Assistant" Height="326" Width="407">
+    <Grid Background="#FFE9E4F0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="105*"/>
+            <ColumnDefinition Width="224*"/>
+        </Grid.ColumnDefinitions>
+        <Menu HorizontalAlignment="Left" Height="19" VerticalAlignment="Top" Width="398" Grid.ColumnSpan="3" FontFamily="Segoe UI Semibold">
+            <MenuItem Header="File" Height="18" Width="32" BorderBrush="#FFF0F0F0">
+                <MenuItem Header="Open" HorizontalAlignment="Left" Height="20" Width="141" Click="OpenFile_MenuItemClick">
+                </MenuItem>
+                <MenuItem Header="Save as..." HorizontalAlignment="Left" Height="20" Width="141" Click="SaveFile_MenuItemClick"/>
+            </MenuItem>
+            <MenuItem Header="Settings" Height="18" Width="58" BorderBrush="#FFF0F0F0" Click="ButtonSettings"/>
+            <MenuItem Header="Help" Height="18" Width="39" BorderBrush="#FFF0F0F0">
+                <MenuItem Header="About" HorizontalAlignment="Left" Height="20" Width="141" Click="MenuItem_AboutClick"/>
+            </MenuItem>
+
+        </Menu>
+        <Button x:Name="buttonNext" Content="Next" Margin="54,72,19,177" Grid.Column="2" RenderTransformOrigin="0.84,2.85" FontSize="14" Background="#FFCAD4E2" Click="ButtonNext_Click" FontFamily="Segoe UI Semibold"/>
+        <ListBox x:Name="listBox" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="246" Margin="11,30,0,0" VerticalAlignment="Top" Width="193" BorderThickness="1"/>
+        <Button x:Name="buttonEnableVoiceControl" Content="Enable voice control" Margin="54,128,19,121" Grid.Column="2" RenderTransformOrigin="0.84,2.85" FontSize="14" Background="#FFCAD4E2" Click="ButtonEnableVoiceControl_Click" FontFamily="Segoe UI Semibold"/>
+        <Button x:Name="buttonDisableVoiceControl" Content="Disable voice control" Margin="54,184,19,65" Grid.Column="2" RenderTransformOrigin="0.84,2.85" FontSize="14" Background="#FFCAD4E2" Click="ButtonDisableVoiceControl_Click" FontFamily="Segoe UI Semibold"/>
+
+
+    </Grid>
+</Window>
